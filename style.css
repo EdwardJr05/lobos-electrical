@@ -108,6 +108,17 @@ h1 {
   text-shadow: 1px 1px #fafa52;
 }
 
+h4 {
+  color: #000;
+  font-family: 'Bellota', cursive;
+  font-size: 75px;
+  margin: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  text-shadow: 1px 1px #fafa52;
+}
+
 .Card-Header {
   font-family: 'Bellota', cursive;
   font-size: 26px;
@@ -152,6 +163,15 @@ h1 {
 
   .Card-Header {
     grid-area: initial;
+  }
+  h1 {
+    font-size: 38px; <!-- mobile -->>
+    line-height: 80%;
+    margin-top: 10px;
+  }
+  h4{
+    font-size: 30px;
+    line-height: 80%;
   }
 }
 
