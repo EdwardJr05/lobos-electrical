@@ -7,56 +7,14 @@ body {
   padding: 10px;
 }
 
-.Photo {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
-  margin: 5px;
-  padding: 10px;
-}
-
-.AboutMe {
-  background: #fff;
-  box-shadow: -1px 7px 28px -9px black inset;
-  color: #000;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  grid-area: 1 / 1 / 1 / 4;
-  padding-left: 1px;
-  padding-right: 1px;
-  padding-top: 1px;
-  position: relative;
-}
-
-.Top-Card {
-  background-color: #3456;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 250px;
-  position: relative;
-}
-
 .Top-Card1 {
   background-color: #3456;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 250px;
+  background-size: contain;
+  min-height: 150px;
   min-width: 250px;
   position: relative;
-}
-
-.Bottom-Card {
-  padding: 10px;
-  color: #000;
-  font-family: "Arial", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  text-shadow: 1px 1px #000;
 }
 
 .profile-pic {
@@ -70,7 +28,7 @@ body {
   width: 200px;
 }
 
-.Eat {
+.Request {
   background: #fff;
   background-size: contain;
   box-shadow: -1px 7px 28px -9px black inset;
@@ -81,7 +39,7 @@ body {
   text-align: justify;
 }
 
-.Relax {
+.Book {
   background: #fff;
   background-size: contain;
   box-shadow: -1px 7px 28px -9px black inset;
@@ -92,7 +50,7 @@ body {
   text-align: justify;
 }
 
-.Travel {
+.Services {
   background: #fff;
   box-shadow: -1px 7px 28px -9px black inset;
   color: #000;
@@ -116,19 +74,33 @@ body {
   text-shadow: 1px 1px #000;
 }
 
-h1 {
-  text-align: center;
+.Bottom-Card2 {
   color: #000;
-  text-shadow: 1px 1px #fff;
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  min-height: 50px;
+  min-width: 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  text-shadow: 1px 1px #000;
+}
+
+h1 {
+  color: #000;
+  font-family: 'Bellota', cursive;
   font-size: 100px;
+  text-align: center;
+  text-shadow: 1px 1px #fff;
 }
 
 .Card-Header {
-  font-family: 'Calibri', sans-serif;
-  font-size: 36px;
+  font-family: 'Bellota', cursive;
+  font-size: 26px;
   text-align: center;
   text-shadow: 1px 1px #000;
-  padding-top: 2px;
+  padding-top: 32px;
 }
 
 #main-footer {
@@ -153,15 +125,19 @@ h1 {
     grid-area: initial;
   }
 
-  .Travel {
+  .Services {
     grid-area: initial;
   }
 
-  .Eat {
+  .Request {
     grid-area: initial;
   }
 
-  .Relax {
+  .Book {
+    grid-area: initial;
+  }
+
+  .Card-Header {
     grid-area: initial;
   }
 }
