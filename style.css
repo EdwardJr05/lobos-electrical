@@ -5,6 +5,10 @@ body {
   line-height: 1.6em;
   margin: 10px;
   padding: 10px;
+  background-image: url(v.svg);
+  background-size: 350px;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .Resources {
@@ -101,11 +105,11 @@ h1 {
   color: #000;
   font-family: 'Bellota', cursive;
   font-size: 100px;
-  margin: 25px;
-  padding-top: 25px;
+  margin: 15px;
+  padding-top: 45px;
   padding-bottom: 25px;
   text-align: center;
-  text-shadow: 1px 1px #fafa52;
+  text-shadow: 2px 2px #fafa52;
 }
 
 h4 {
