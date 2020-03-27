@@ -76,6 +76,11 @@ body {
   text-align: justify;
 }
 
+textarea{
+  font-size: 16px;
+
+}
+
 .Bottom-Card1 {
   color: #000;
   font-family: "Arial", sans-serif;
