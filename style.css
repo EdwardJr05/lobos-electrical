@@ -40,7 +40,7 @@ body {
   position: relative;
   top: 135px;
   width: 90px;
-  -webkit-clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(100% at 50% 50%);
 
 }
 
