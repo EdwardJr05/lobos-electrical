@@ -195,13 +195,14 @@ h4 {
   .Card-Header {
     grid-area: initial;
   }
+
   h1 {
-    font-size: 38px; <!-- mobile -->>
+    font-size: 38px;
     line-height: 80%;
     margin-top: 10px;
   }
 
-  h4{
+  h4 {
     font-size: 30px;
     line-height: 80%;
   }
