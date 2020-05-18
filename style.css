@@ -116,7 +116,7 @@ ul {
   font-family: "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   min-height: 150px;
   min-width: 30px;
   padding-left: 8px;
@@ -150,6 +150,7 @@ h4 {
   color: #000;
   font-family: 'Bellota', cursive;
   font-size: 24px;
+  text-decoration: underline;
   text-align: center;
   text-shadow: 1px 1px #f2f528;
   padding-top: 36px;
