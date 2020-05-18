@@ -41,7 +41,6 @@ body {
   top: 135px;
   width: 90px;
   -webkit-clip-path: circle(100% at 50% 50%);
-
 }
 
 .Request {
@@ -80,11 +79,11 @@ body {
 
 textarea {
   font-size: 16px;
-  width: 320px;
-  height: 150px;
+  width: 350px;
+  height: 100px;
 }
 
-ul{
+ul {
   column-count: 2;
 }
 
@@ -110,7 +109,6 @@ ul{
   padding-left: 8px;
   padding-right: 8px;
   padding-bottom: 8px;
-
 }
 
 .Bottom-Card3 {
@@ -124,7 +122,6 @@ ul{
   padding-left: 8px;
   padding-right: 8px;
   text-align: left;
-
 }
 
 h1 {
@@ -154,7 +151,7 @@ h4 {
   font-family: 'Bellota', cursive;
   font-size: 24px;
   text-align: center;
-  text-shadow: 1px 1px #F2F528;
+  text-shadow: 1px 1px #f2f528;
   padding-top: 36px;
 }
 
