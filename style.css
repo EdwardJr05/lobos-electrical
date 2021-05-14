@@ -116,12 +116,11 @@ ul {
   font-family: "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
-  letter-spacing: 1.5px;
   min-height: 150px;
   min-width: 30px;
   padding-left: 8px;
   padding-right: 8px;
-  text-align: left;
+  text-align: justify;
 }
 
 h1 {
@@ -132,7 +131,7 @@ h1 {
   padding-top: 45px;
   padding-bottom: 25px;
   text-align: center;
-  text-shadow: 2px 2px #fafa52;
+  text-shadow: 1px 1px #fafa52;
 }
 
 h4 {
