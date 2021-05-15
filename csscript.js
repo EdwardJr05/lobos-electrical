@@ -1,64 +1,38 @@
-$(document).ready(function() {
-  $('.not-human, .triangle').hide();
-  $('.verify').addClass('disabled');
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
 
-  function human(e) {
-    if ($('.checkbox-text').hasClass('robot')) {
-      return;
-    }
-    else {
-    	$('.checkbox-text').text("You're human!").css("color", "green").addClass('human');
-    	$('.checkbox').addClass('disabled');
-    	$('.checkbox').click(function(e) {
-      	e.preventDefault();
-    	});
-    }
+  burger.addEventListener('click',() => {
+      nav.classList.toggle('nav-active');
+  });
+}
 
-    $('.not-human, .triangle').slideUp();
+navSlide();
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
-
-  function robot(event) {
-    if ($('.checkbox-text').hasClass('human')) {
-      return;
-    }
-    else {
-      $('.checkbox-text').text("ROBOT").css("color", "red").addClass('robot');
-      $('.checkbox').addClass('disabled');
-      $('.checkbox').click(function(event) {
-        event.preventDefault();
-      });
-
-      $('.not-human, .triangle').slideDown();
-    }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
   }
-
-  $('.checkbox').click(function() {
-    if ($('.checkbox').is(":checked")) {
-      $(document).mousemove(function() {
-        window.setTimeout(function() {
-          human();
-        }, 250);
-      });
-
-      window.setTimeout(function() {
-        robot();
-      }, 1000);
-    };
-  });
-
-  $('.captcha-code').keyup(function(event) {
-    if ($('.captcha-code').val().length <= 0) {
-      $('.verify').addClass('disabled');
-    }
-    else {
-      $('.verify').removeClass('disabled');
-    };
-  });
-
-  $('.verify').click(function() {
-    if ($('.captcha-code').val() == "captcha code") {
-      $('.checkbox-text').removeClass('robot').addClass('human');
-      $('.not-human, .triangle').slideUp();
-    }
-  });
-});
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
