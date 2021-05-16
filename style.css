@@ -4,13 +4,15 @@ body {
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h3 {
   text-align: center;
+  text-decoration: underline;
   font-size: 25px;
   padding-top: 10px;
+  color: #fff;
 }
 
 h2 {
@@ -209,6 +211,7 @@ nav {
 }
 
 .column {
+  color: #fff;
   float: left;
   width: 33.33%;
   padding: 10px;
