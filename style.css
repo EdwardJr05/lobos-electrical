@@ -17,6 +17,7 @@ h3 {
 
 h2 {
   text-align: center;
+  text-decoration: underline;
   font-size: 40px;
   padding-top: 10px;
 }
@@ -214,7 +215,7 @@ nav {
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  text-align: justify;
 }
 
 /* Clear floats after the columns */
